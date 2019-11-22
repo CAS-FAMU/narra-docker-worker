@@ -6,7 +6,7 @@ set -x
 /narra-build/scripts/ubuntu.sh
 
 # NARRA initialization
-/narra-build/scripts/narra-init.sh
+/narra-build/scripts/narra_init.sh
 
 # Build morphodita
 /narra-build/scripts/morphodita.sh
