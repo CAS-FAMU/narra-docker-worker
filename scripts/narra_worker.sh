@@ -8,7 +8,7 @@
 # Read more here: https://github.com/phusion/baseimage-docker#adding-additional-daemons
 cd /home/app/source/narra
 
-if [[ "$DEBUG" == "true" ]]; then
+if [ $DEBUG == "true" ]; then
     exec /sbin/setuser app /usr/bin/bundle exec rdebug-ide --host 0.0.0.0 --port 1235 --dispatcher-port 26163 -- /usr/local/rvm/gems/default/bin/sidekiq
 else
     exec /sbin/setuser app /usr/bin/bundle exec /usr/local/rvm/gems/default/bin/sidekiq
